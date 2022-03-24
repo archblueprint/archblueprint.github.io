@@ -9,23 +9,6 @@
 		* {
 			scroll-behavior: smooth !important;
 		}
-		@keyframes funn {
-			0% {
-				transition-duration: 1s;
-				font-size: 24px;
-			}
-			50% {
-				transition-duration: 1s;
-				font-size: 1px;
-			}
-			100% {
-				transition-duration: 1s;
-				font-size: 24px;
-			}
-		}
-		.funny-anim {
-			animation: funn 1s infinite normal;
-		}
 	</style>
 	<title>Blueprint</title>
 	<link href="./css/style.css" rel="stylesheet" type="text/css">
@@ -825,14 +808,5 @@
 	</div>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="./js/services.js" type="text/javascript"></script>
-
-	<script type="text/javascript">
-		function theme_checker() {
-			if (location.href === 'https://archblueprint.github.io/en-us/?promo=%22alpha%22') {
-				var x = document.querySelector("#brand")
-				x.addClass('funny-anim')
-			} else return;
-		} theme_checker();
-	</script>
 </body>
 </html>
