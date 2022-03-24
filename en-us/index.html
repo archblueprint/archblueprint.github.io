@@ -819,12 +819,12 @@
 
 	<script type="text/javascript">
 		function theme_checker() {
-			if (location.href === 'https://archblueprint.github.io/en-us/?theme="dark"') {
-				var x = document.getElementById('brand')
-				x.textContent = "Dark Mode"
-			} else if (location.href === 'https://archblueprint.github.io/en-us/?theme="light"') {
-				var y = document.getElementById('brand')
-				y.textContent = "Light Mode"
+			if (location.href === 'https://archblueprint.github.io/en-us/?theme=%22dark%22') {
+				var x = document.querySelector("#brand")
+				x.textContent = 'Dark Mode'
+			} else if (location.href === 'https://archblueprint.github.io/en-us/?theme=%22light%22') {
+				var y = document.querySelector("#brand")
+				y.textContent = 'Light Mode'
 			} else return;
 		} theme_checker();
 	</script>
