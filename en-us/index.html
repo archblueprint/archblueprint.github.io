@@ -820,9 +820,11 @@
 	<script type="text/javascript">
 		function theme_checker() {
 			if (location.href === 'https://archblueprint.github.io/en-us/?theme="dark"') {
-				document.getElementById('brand').textContent('Dark Mode')
+				var x = document.getElementById('brand')
+				x.textContent = "Dark Mode"
 			} else if (location.href === 'https://archblueprint.github.io/en-us/?theme="light"') {
-				document.getElementById('brand').textContent('Light Mode')
+				var y = document.getElementById('brand')
+				y.textContent = "Light Mode"
 			} else return;
 		} theme_checker();
 	</script>
