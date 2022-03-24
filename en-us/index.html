@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-wf-domain="appflow-template.webflow.io" data-wf-page="61badf42fc83557f88216ae3" data-wf-site="61badf42fc835530ad216ae2" data-wf-status="1" class="w-mod-js w-mod-ix wf-hind-n4-active wf-hind-n7-active wf-hind-n5-active wf-hind-n6-active wf-active">
+<html class="w-mod-js w-mod-ix wf-hind-n4-active wf-hind-n7-active wf-hind-n5-active wf-hind-n6-active wf-active">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<style>
@@ -8,6 +8,23 @@
 		}
 		* {
 			scroll-behavior: smooth !important;
+		}
+		@keyframes funn {
+			0% {
+				transition-duration: 1s;
+				font-size: 24px;
+			}
+			50% {
+				transition-duration: 1s;
+				font-size: 1px;
+			}
+			100% {
+				transition-duration: 1s;
+				font-size: 24px;
+			}
+		}
+		.funny-anim {
+			animation: funn 1s infinite normal;
 		}
 	</style>
 	<title>Blueprint</title>
@@ -777,7 +794,7 @@
 			<div class="copy-right---social-icon-container">
 				<div class="copy-right-text-container">
 					<div class="copy-right-text">
-						<div>© AppFlow 2021. All Rights Reserved.</div>
+						<div>© Blueprint 2021. All Rights Reserved.</div>
 					</div>
 					<a href="https://appflow-template.webflow.io/template-info/changelog" class="change-log-link w-inline-block">
 						<div>Changelog</div>
@@ -805,9 +822,6 @@
 				</aside>
 			</div>
 		</div>
-		<div class="powered-by-webflow">
-			<div class="webflow-text">Powered by<a href="https://webflow.com/" target="_blank" class="webflow"><strong class="webflow-span"> Webflow</strong></a></div>
-		</div>
 	</div>
 	<div class="scroll-to-top" style="will-change: transform; transform: translate3d(0px, 100px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
 		<a href="https://appflow-template.webflow.io/#Navbar" class="scroll-to-top-link w-inline-block">
@@ -819,12 +833,9 @@
 
 	<script type="text/javascript">
 		function theme_checker() {
-			if (location.href === 'https://archblueprint.github.io/en-us/?theme=%22dark%22') {
+			if (location.href === 'https://archblueprint.github.io/en-us/?promo=%22alpha%22') {
 				var x = document.querySelector("#brand")
 				x.textContent = 'Dark Mode'
-			} else if (location.href === 'https://archblueprint.github.io/en-us/?theme=%22light%22') {
-				var y = document.querySelector("#brand")
-				y.textContent = 'Light Mode'
 			} else return;
 		} theme_checker();
 	</script>
